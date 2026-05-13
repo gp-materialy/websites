@@ -27,7 +27,11 @@ body {
   left: 0;
   width: 100%;
   height: 65%;
-  /* TODO: background sky gradient */
+  background: linear-gradient(
+    to bottom,
+    hsl(210, 80%, 60%),
+    hsl(30, 90%, 70%)
+  );
 }
 
 .sun {
@@ -36,8 +40,9 @@ body {
   right: 80px;
   width: 80px;
   height: 80px;
-  /* TODO: sun shape and glow */
-  /* TODO: sun color experiment */
+  background-color: hsl(10, 100%, 60%);
+  border-radius: 50%;
+  box-shadow: 0 0 40px 20px hsl(45, 100%, 80%);
 }
 
 .hills {
@@ -46,7 +51,12 @@ body {
   left: -10%;
   width: 120%;
   height: 45%;
-  /* TODO: hills shape */
+  background: radial-gradient(
+    ellipse 120% 60% at 50% 100%,
+    hsl(120, 50%, 35%),
+    hsl(120, 40%, 25%)
+  );
+  border-radius: 50% 50% 0 0 / 30% 30% 0 0;
 }
 
 .water {
@@ -55,7 +65,11 @@ body {
   left: 0;
   width: 100%;
   height: 32%;
-  /* TODO: water color and transparency */
+  background: linear-gradient(
+    to bottom,
+    hsla(210, 70%, 50%, 0.85),
+    hsla(210, 60%, 30%, 1)
+  );
 }
 
 .text-overlay {
@@ -65,6 +79,9 @@ body {
   width: 100%;
   text-align: center;
   font-family: Georgia, serif;
-  /* TODO: text styling and shadow */
-  /* TODO: text color experiment */
+  color: hsl(50, 100%, 80%);
+  font-size: 2rem;
+  text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.6),
+    0 0 30px hsl(45, 100%, 60%);
 }
