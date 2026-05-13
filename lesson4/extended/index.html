@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My website</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <span class="logo">GameStudio</span>
+    <div class="nav-links">
+      <a href="#start">Start</a>
+      <a href="#about-us">About us</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+  <header>
+    <h1>My first website</h1>
+    <p>We are learning how to build a page layout</p>
+  </header>
+  <section id="start" class="light">
+    <h2>Welcome to the website</h2>
+    <p>Welcome to GameStudio! We create games that entertain and teach.</p>
+    <p>Our mission is to provide entertainment for players.</p>
+    <p>Check out our latest projects below.</p>
+  </section>
+  <section id="about-us" class="dark">
+    <h2>About us</h2>
+    <p>We are a team of programming and design enthusiasts.</p>
+    <p>We have been operating since 2020 and have already created 5 games.</p>
+    <p>Our team consists of 10 people from all over Poland.</p>
+  </section>
+  <section id="contact" class="light">
+    <h2>Contact</h2>
+    <p>Do you want to work with us? Write to us!</p>
+    <p>We respond to messages within 24 hours.</p>
+    <p>You can also find us on social media platforms.</p>
+  </section>
+  <footer>
+    <p>All rights reserved 2026</p>
+  </footer>
+  <script>
+    "use strict";
+    window.addEventListener("scroll", function() {
+      var nav = document.querySelector("nav");
+      if (window.scrollY > 50) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    });
+  </script>
+</body>
+</html>
